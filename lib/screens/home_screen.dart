@@ -58,9 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Text("opa... deu erro! ${asyncSnapshot.error}"),
             );
           }
-
-          print(asyncSnapshot.hasData);
-
+          
           if (!asyncSnapshot.hasData || asyncSnapshot.data!.isEmpty) {
             return Center(child: Text("opa... sem tarefas!"));
           }
